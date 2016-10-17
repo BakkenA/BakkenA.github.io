@@ -1,0 +1,123 @@
+body{
+	background:black;
+	background-repeat:no-repeat;
+}
+.main {
+	margin-top: 100px;
+}
+.beneath{
+	z-index:-1;
+}
+.entry {
+	background-color:#07556d;
+	max-width:85%;
+	z-index:-1;
+}
+.entrypic{
+	max-width:50%;
+	padding:;
+}
+.sbuttons{
+	z-index:0;
+}
+h1{
+	color:white;
+	font-family:'Bungee Outline',cursive;
+}
+h2{
+	color:white;
+	font-family:'deus-etched-machina';
+}
+#carousel-example-with-caption{
+	z-index:0;
+}
+p{
+	color:#ee7600;
+	font-family:courier;
+}
+.dropbtn {
+	background-color:rgba(211,211,209,0);
+	color: rgba(164,134,35,1);
+	padding: 0px;
+	padding-left:2px;
+	padding-right:2px;
+	font-size: 28px;
+	border: none;
+	cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus{
+	background-color: rgba(164,102,35,.5);
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	z-index: +1;
+	display: none;
+	position: fixed;
+	padding-top: 10px;
+	right:0px;
+	top: 66px;
+	background-image: url("woodgrain.jpg");
+	min-width: 160px;
+	max-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+	font-family: 'Yesteryear', cursive;
+	color: rgba(164,102,35,1);
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content a:hover {background-color:rgba(211,211,209,0.08)}
+.show {display:block;}
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-image: url("woodgrain.jpg");
+	position: fixed;
+	top: 0;
+	width:100%;
+	z-index:1;
+}
+ul.topnav li {float: left;}
+ul.topnav li a {
+	display: inline-block;
+	color: rgba(164,102,35,1);
+	text-align: center;
+	padding: 20px 22px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-family: 'Yesteryear', cursive;
+	font-size:28px;
+}
+ul.topnav li a:hover {background-color: rgba(211, 211, 209,0.08)}
+ul.topnav li.icon {display: none;}
+@media screen and (max-width:680px) {
+	ul.topnav li:not(:first-child) {display: none;}
+	ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	}
+}
+@media screen and (max-width:680px) {
+	ul.topnav.responsive {position: relative;}
+	ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+@font-face {
+    font-family: 'deus-etched-machina';
+    src:url('deus-etched-machina.ttf.woff') format('woff'),
+        url('deus-etched-machina.ttf.svg#deus-etched-machina') format('svg'),
+        url('deus-etched-machina.ttf.eot'),
+        url('deus-etched-machina.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
